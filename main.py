@@ -49,4 +49,23 @@ for i in range(1, 11):
         catalog.append(item)
         categories.add(category)
 
+        print("\n" + "=" * 60)
+        print("                   CATALOG SUMMARY                    ")
+        print("=" * 60)
+
+        for index, item in enumerate(catalog, start=1):
+            print(f"\nItem #{index}")
+        print(f"ID: {item['id']}")
+        print(f"Name: {item['name']}")
+        print(f"Category: {item['category']}")
+        print(f"Price: ${float(item['price']):.2f}")
+        print(f"Status: {item['status']}")
+        print(f"Description: {item['description']}")
+
+        print("\n" + "-" * 60)
+        print(f"Total items in catalog: {len(catalog)}")
+        print(f"Categories unique count: {len(categories)}")
+        print(f"Unique categories: {', '.join(categories)}")
+        print("-" * 60)
+
         
