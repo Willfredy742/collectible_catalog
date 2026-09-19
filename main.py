@@ -36,3 +36,17 @@ for i in range(1, 11):
         if "usada" in description or "certificada" in description:
             break
         print("Error: Description must contain the word 'usada' or 'certificada'.")
+
+        item = {
+            "id": item_id,
+            "name": name,
+            "category": category,
+            "price": price,
+            "status": status,
+            "description": description
+        }
+
+        catalog.append(item)
+        categories.add(category)
+
+        
