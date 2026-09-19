@@ -16,3 +16,11 @@ item_id = input("Enter ID: ").strip()
 name = input("Enter name: ").strip()
 category = input("Enter category: ").strip()
 
+while True:
+    try:
+        price = float(input("Enter price (decimal): "))
+        if price > 0:
+            break
+        print("Error: Price must be greater than zero.")
+    except ValueError:
+        print("Error: Please enter a valid numeric value.")
