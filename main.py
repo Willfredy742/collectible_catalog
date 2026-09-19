@@ -11,3 +11,8 @@ print("\nPlease enter information for 10 collectible items:")
 
 for i in range(1, 11):
     print(f"\n--- Registering item {i} of 10 ---")
+
+item_id = input("Enter ID: ").strip()
+name = input("Enter name: ").strip()
+category = input("Enter category: ").strip()
+
